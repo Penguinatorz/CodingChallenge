@@ -91,11 +91,11 @@ public class DataLord {
             {
                 ConList[i].AccountId = accList[0].Id;
             }
-            else if(random >=4 & random <= 7.99)
+            else if(random >=4 && random <= 7.99)
             {
                 ConList[i].AccountId = accList[1].Id;                
             }
-            else if(random >=8 & random <= 12)
+            else if(random >=8 && random <= 12)
             {
                 ConList[i].AccountId = accList[2].Id;                
             }
