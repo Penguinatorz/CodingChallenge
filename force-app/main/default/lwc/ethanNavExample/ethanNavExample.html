@@ -1,0 +1,13 @@
+<template>
+    <div lwc-ref="container">
+
+        <template lwc:if={residences.data}>
+            <template for:each={residences.data} for:item="residence">
+                <lightning-card key={residence.Id}>
+                    <p>{residence.Name}</p>
+                    <lightning-button variant="brand" data-id={residence.Id} onclick={navToResidencePage} label="See More"></lightning-button>
+                </lightning-card>      
+            </template>
+        </template>
+    </div>
+</template>

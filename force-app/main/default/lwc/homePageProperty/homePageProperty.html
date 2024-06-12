@@ -1,0 +1,9 @@
+<template>
+    <h1 onclick={handleNavigate}>Testing Component</h1>
+    <template for:each={wiredProperty.data} for:item="Prop">
+        <lightning-card key={Prop.Id} onclick={handleNavigate}>
+            <p>{Prop.Name}</p>
+        </lightning-card>
+    </template>
+    
+</template>

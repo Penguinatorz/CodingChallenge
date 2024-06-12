@@ -1,0 +1,22 @@
+<!--
+    Create a lightning web component hosted on an experience site that can:
+
+view all hot rated accounts in a datatable
+
+include a search feature to filter the accounts in the datatable by account name 
+
+The table should not display until records are loaded into the component 
+
+-->
+
+<template>
+    <p>Search for Accounts with ratings that are Hot.</p>
+    <lightning-input class="input" type="text" onclick={handleQuery}></lightning-input>
+    <lightning-button variant="brand" label="search" onclick={handleQuery}></lightning-button>
+
+    <template lwc:if={allAccounts.data}>
+        <lightning-datatable key-field="id" data={allAccounts.data} columns={columns}>
+        </lightning-datatable>
+    </template>
+    
+</template>
