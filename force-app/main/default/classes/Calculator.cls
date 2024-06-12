@@ -38,7 +38,7 @@ public with sharing class Calculator {
     }
         
    
-    Public Integer Mod(Integer int1, Integer int2){
+    Public Integer mod(Integer int1, Integer int2){
         Double int3 = 0;
         int3 = int1/ (Decimal) int2;
         
