@@ -34,19 +34,19 @@ public abstract class Vehicle {
     
     public Vehicle(){
        final Integer capcity = 1;
-       this.Speed = 1;
+       this.speed = 1;
        this.occupants = 4;
         this.name = 'Speedster';        
     }
     public Vehicle(Integer c, Integer s, Integer o, String n){
        final Integer capcity = c;
-       this.Speed = s;
+       this.speed = s;
        this.occupants = o;
        this.name = n;        
     }    
     
     public void accelerate(Integer value){
-        this.Speed = value;
+        this.speed = value;
     }
     
     public abstract void Turn(Integer value);
