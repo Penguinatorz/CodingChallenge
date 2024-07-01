@@ -54,7 +54,7 @@ public class DataLord {
     }
     
     Public List<List<sObject>> findingLetters(){
-        return [FIND 'a and o' IN ALL FIELDS RETURNING Account(Name)];
+        return [FIND '*A*O* OR *O*A*' IN ALL FIELDS RETURNING Account(Name)];
     }    
     
     Public void spawnContacts(){
